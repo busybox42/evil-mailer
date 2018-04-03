@@ -3,7 +3,9 @@ This repository contains a mailer script I wrote in ruby.
 
 ## Requirements
 Ruby gems mail and parallel:
+
 https://rubygems.org/gems/mail
+
 https://rubygems.org/gems/parallel
 
 ## Useage
