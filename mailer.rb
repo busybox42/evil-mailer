@@ -122,7 +122,12 @@ end
 begin
   if rdm == nil
     msgstr  = File.read(text)
-    msghtml = File.read(html)
+    if File.file?(html)
+      msghtml = File.read(html)
+    else
+      msghtml = ""
+      puts "Sending plain text message only."
+    end
   else
     puts "Random message directory: #{rdm}"
     logger.info("Random message directory: #{rdm}")
